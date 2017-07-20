@@ -6,26 +6,26 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    SwiftyExtensionsHelper is a Library contain many helpful Extensions.
                    To Exned Cocoa Framework or some popular Framework.
-                   Jusy use specified extension you need.
+                   Jusy use specified extensions you need.
 
                    DESC
   s.homepage = 'https://github.com/payliu/SwiftyExtensionsHelper'
   s.author   = { 'Pay Liu'           => 'payliu@gmail.com',
                  'Josh'              => 'josh@octalord.com' }
 
-  s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :tag => '0.0.5' }
-  #s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :commit => '8564bf5' }
+  s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :tag => '0.0.1' }
 
-  s.platform = :ios, '10.0'
+  s.ios.deployment_target   = '10.0'
 
-  s.requires_arc = false
+  # https://guides.cocoapods.org/syntax/podspec.html#frameworks
+  # s.frameworks = 'Foundation'
 
   # extensions group
   s.subspec 'Extensions' do |extensions|
     extensions.source_files = 'src/Extensions'
 
     # sub group of extensions group.
-    extension.subspec 'UISplitViewController' do |uisplitviewcontroller|
+    extensions.subspec 'UISplitViewController' do |uisplitviewcontroller|
       uisplitviewcontroller.dependency 'SwiftyExtensionsHelper/UISplitViewController+ToggleMasterView'
     end
 
