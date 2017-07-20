@@ -10,7 +10,7 @@ import Foundation
 
 extension UISplitViewController {
 
-    func toggleMasterView() {
+    public func toggleMasterView() {
 
         let button = self.displayModeButtonItem;
 
