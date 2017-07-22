@@ -1,0 +1,25 @@
+PODS:
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
+    - CocoaLumberjack/Default
+  - CocoaLumberjack/Swift (3.2.0):
+    - CocoaLumberjack/Default
+  - NSLogger/ObjC (1.8.3)
+  - NSLogger/Swift (1.8.3):
+    - NSLogger/ObjC
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 3.2)
+  - CocoaLumberjack/Swift (~> 3.2)
+  - NSLogger/Swift (~> 1.8)
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
+  NSLogger: c9b80dbeee1d65eb553647a1f6f1f72171b04808
+
+PODFILE CHECKSUM: cc2b06f565afe471879211ea049b5be0f653f8c7
+
+COCOAPODS: 1.2.1

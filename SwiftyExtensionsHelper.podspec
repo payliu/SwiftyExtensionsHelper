@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.author   = { 'Pay Liu'           => 'payliu@gmail.com',
                  'Josh'              => 'josh@octalord.com' }
 
-  s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :tag => '0.0.1' }
-
+  # s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :tag => s.version }
+  s.source   = { :git => 'https://github.com/payliu/SwiftyExtensionsHelper.git', :head }
   s.ios.deployment_target   = '10.0'
 
   # https://guides.cocoapods.org/syntax/podspec.html#frameworks
@@ -31,6 +31,13 @@ Pod::Spec.new do |s|
 
   end
 
+  # Utility group
+  s.subspec 'Utility' do |utility|
+    utility.source_files = 'src/Utility/**/*.swift'
+    utility.dependency 'CocoaLumberjack', '~> 3.2'  # 避免一些警告
+    utility.dependency 'CocoaLumberjack/Swift', '~> 3.2'
+    utility.dependency 'NSLogger/Swift', '~> 1.8'
+  end
 
   # individual extension
   # Definition
