@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		6F83BC641F1D0035009C9BA7 /* SwiftyExtensionsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F83BC621F1D0035009C9BA7 /* SwiftyExtensionsHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F83BC701F1D05C1009C9BA7 /* UISplitViewController+ToggleMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F83BC6F1F1D05C1009C9BA7 /* UISplitViewController+ToggleMasterView.swift */; };
+		6FA76A511F224C40003FB3B6 /* LumberjackNSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA76A501F224C40003FB3B6 /* LumberjackNSLogger.swift */; };
+		6FA76A631F22BF70003FB3B6 /* NSLoggerLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA76A621F22BF70003FB3B6 /* NSLoggerLogFormatter.swift */; };
+		6FA76A651F22C1B6003FB3B6 /* ConsoleLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA76A641F22C1B6003FB3B6 /* ConsoleLogFormatter.swift */; };
+		CC8343D35BD0BA6150645ABC /* Pods_SwiftyExtensionsHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8FEE48D04A2E361DF1342CD /* Pods_SwiftyExtensionsHelper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B144813EBCDF2B9E00FD602 /* Pods-SwiftyExtensionsHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensionsHelperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyExtensionsHelperTests/Pods-SwiftyExtensionsHelperTests.release.xcconfig"; sourceTree = "<group>"; };
+		6549BEE449883F1B42ABE187 /* Pods-SwiftyExtensionsHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensionsHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyExtensionsHelperTests/Pods-SwiftyExtensionsHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		667734EDC0B8FB9FF4B010B9 /* Pods_SwiftyExtensionsHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyExtensionsHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F83BC5F1F1D0035009C9BA7 /* SwiftyExtensionsHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyExtensionsHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F83BC621F1D0035009C9BA7 /* SwiftyExtensionsHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyExtensionsHelper.h; sourceTree = "<group>"; };
 		6F83BC631F1D0035009C9BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F83BC6F1F1D05C1009C9BA7 /* UISplitViewController+ToggleMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UISplitViewController+ToggleMasterView.swift"; path = "Extensions/UISplitViewController/UISplitViewController+ToggleMasterView/UISplitViewController+ToggleMasterView.swift"; sourceTree = "<group>"; };
+		6FA76A501F224C40003FB3B6 /* LumberjackNSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LumberjackNSLogger.swift; path = Utility/Logger/LumberjackNSLogger.swift; sourceTree = "<group>"; };
+		6FA76A611F225152003FB3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/pay/Documents/programming/github/SwiftyExtensionsHelper/src/Info.plist; sourceTree = "<absolute>"; };
+		6FA76A621F22BF70003FB3B6 /* NSLoggerLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSLoggerLogFormatter.swift; path = Utility/Logger/NSLoggerLogFormatter.swift; sourceTree = "<group>"; };
+		6FA76A641F22C1B6003FB3B6 /* ConsoleLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConsoleLogFormatter.swift; path = Utility/Logger/ConsoleLogFormatter.swift; sourceTree = "<group>"; };
+		9CAEE75769CC228ABB1E26D6 /* Pods-SwiftyExtensionsHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensionsHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyExtensionsHelper/Pods-SwiftyExtensionsHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		F8FEE48D04A2E361DF1342CD /* Pods_SwiftyExtensionsHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyExtensionsHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD145C5D4E8972906AE973F7 /* Pods-SwiftyExtensionsHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensionsHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyExtensionsHelper/Pods-SwiftyExtensionsHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,18 +37,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8343D35BD0BA6150645ABC /* Pods_SwiftyExtensionsHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39A175D38BF28BD74E6DE1BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8FEE48D04A2E361DF1342CD /* Pods_SwiftyExtensionsHelper.framework */,
+				667734EDC0B8FB9FF4B010B9 /* Pods_SwiftyExtensionsHelperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6F83BC551F1D0035009C9BA7 = {
 			isa = PBXGroup;
 			children = (
 				6F83BC6A1F1D0137009C9BA7 /* Extensions */,
+				6FA76A4E1F224C04003FB3B6 /* Utility */,
 				6F83BC611F1D0035009C9BA7 /* SwiftyExtensionsHelper */,
 				6F83BC601F1D0035009C9BA7 /* Products */,
+				EB25D20DD86726C21FD41372 /* Pods */,
+				39A175D38BF28BD74E6DE1BA /* Frameworks */,
+				6FA76A611F225152003FB3B6 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +107,35 @@
 			name = "UISplitViewController+ToggleMasterView";
 			sourceTree = "<group>";
 		};
+		6FA76A4E1F224C04003FB3B6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6FA76A4F1F224C32003FB3B6 /* Logger */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		6FA76A4F1F224C32003FB3B6 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				6FA76A501F224C40003FB3B6 /* LumberjackNSLogger.swift */,
+				6FA76A621F22BF70003FB3B6 /* NSLoggerLogFormatter.swift */,
+				6FA76A641F22C1B6003FB3B6 /* ConsoleLogFormatter.swift */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		EB25D20DD86726C21FD41372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CAEE75769CC228ABB1E26D6 /* Pods-SwiftyExtensionsHelper.debug.xcconfig */,
+				FD145C5D4E8972906AE973F7 /* Pods-SwiftyExtensionsHelper.release.xcconfig */,
+				6549BEE449883F1B42ABE187 /* Pods-SwiftyExtensionsHelperTests.debug.xcconfig */,
+				2B144813EBCDF2B9E00FD602 /* Pods-SwiftyExtensionsHelperTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,10 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F83BC671F1D0035009C9BA7 /* Build configuration list for PBXNativeTarget "SwiftyExtensionsHelper" */;
 			buildPhases = (
+				9EC507AA30CD8D42F00EC7A8 /* [CP] Check Pods Manifest.lock */,
 				6F83BC5A1F1D0035009C9BA7 /* Sources */,
 				6F83BC5B1F1D0035009C9BA7 /* Frameworks */,
 				6F83BC5C1F1D0035009C9BA7 /* Headers */,
 				6F83BC5D1F1D0035009C9BA7 /* Resources */,
+				BCD7B92A7669424DF9904A03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,12 +214,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9EC507AA30CD8D42F00EC7A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD7B92A7669424DF9904A03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftyExtensionsHelper/Pods-SwiftyExtensionsHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F83BC5A1F1D0035009C9BA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA76A631F22BF70003FB3B6 /* NSLoggerLogFormatter.swift in Sources */,
+				6FA76A511F224C40003FB3B6 /* LumberjackNSLogger.swift in Sources */,
 				6F83BC701F1D05C1009C9BA7 /* UISplitViewController+ToggleMasterView.swift in Sources */,
+				6FA76A651F22C1B6003FB3B6 /* ConsoleLogFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +365,7 @@
 		};
 		6F83BC681F1D0035009C9BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CAEE75769CC228ABB1E26D6 /* Pods-SwiftyExtensionsHelper.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -291,6 +387,7 @@
 		};
 		6F83BC691F1D0035009C9BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD145C5D4E8972906AE973F7 /* Pods-SwiftyExtensionsHelper.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
